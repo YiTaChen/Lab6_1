@@ -15,7 +15,7 @@ function checkData() {
     alert("Email must be format of xxx@xxx.xxx");
   }
 
-  if (isNaN(Number(phone))) {
+  if (isNaN(Number(phone)) || phone.length < 1) {
     alert("Phone number must use only numbebrs.");
   }
 
